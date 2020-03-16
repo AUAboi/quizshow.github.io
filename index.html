@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>A Quiz GameShow</title>
+</head>
+
+<body>
+    <!-- Devolped By AUAW Digital -->
+    <div class="container">
+        <div class="header">
+            <h1>Quiz</h1>
+            <h3>A Live Game Show</h3>
+        </div>
+
+        <div class="score">
+            <h2>Your Score: 0</h2>
+        </div>
+        <div class="cont-start">
+            <div class="start init">Start Quiz!</div>
+        </div>
+
+        <div class="restart"><button class="restart-btn">
+                <h3>Restart!</h3>
+            </button></div>
+        <div class="quizContain">
+            <div class="timer">
+                <h1>10</h1>
+            </div>
+            <div class="quiz">
+                <div class="questions">
+                    <p>Q1 Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Architecto, aspernatur!</p>
+                </div>
+                <div class="choices">
+                    <div class="choice" id="A" onclick="checkAnswer('A')">Option A</div>
+                    <div class="choice" id="B" onclick="checkAnswer('B')">Option B</div>
+                    <div class="choice" id="C" onclick="checkAnswer('C')">Option C</div>
+                </div>
+                <div class="result">
+                    <h1>Right Answer</h1>
+                </div>
+            </div>
+        </div>
+        <div class="extra">
+            <div class="rules">
+                <h3>How To Play:-</h3>
+                <ul>
+                    <li>You Will Be Asked Some Question</li>
+                    <li>You Will Have 10 secs to answer each Question</li>
+                    <li>When The times up, Correct Answer Will be Showed</li>
+                    <li>You Have To Answer half of the questions correctly to become elgible for the prize</li>
+                    <li>Prize Will Declared after last Question</li>
+                </ul>
+            </div>
+            <div class="disclaimer">
+                <h3>Disclaimer</h3>
+                <p>Its Just a Test Build That I made for Fun. There Are Only Dummy Questions. You Can Change Questions
+                    and options and Add more Questions</p>
+            </div>
+        </div>
+
+    </div>
+    <script src="java/script.js"></script>
+</body>
+
+</html>
