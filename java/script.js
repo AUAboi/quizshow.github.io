@@ -212,14 +212,6 @@ function countDown() {
         time--;
         timer.style.display = 'none';
         quizContain.style.display = 'none';
-    }
-    else if (time < 0 && time > -4) {
-        time--;
-        timer.style.display = 'none';
-        quizContain.style.display = 'none';
-    }
-    else if (time < -3 && time > -7) {
-        time--;
         if (rightAns) {
             showCorrect(correctOP);
             quizContain.style.display = 'block';
@@ -233,13 +225,16 @@ function countDown() {
             }
             quizContain.style.display = 'block';
         }
-        if(correctAns && time == -5){
+        if(correctAns){
             score++;
             scoreBoard.innerHTML = `<div><h2>Your Score: ${score}</h2></div>
             `;
         }
     }
-    else if (time === -7) {
+    else if(time < 0 && time > -4) {
+        time--;
+    }
+    else if (time === -4) {
         if (runningQuestion < lastQuestion) {
             runningQuestion++;
             renderQuestion();
